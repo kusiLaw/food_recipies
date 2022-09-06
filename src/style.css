@@ -1,3 +1,85 @@
-h1 {
-  color: orange;
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Lato, Helvetica, sans-serif;
+  min-width: 32rem;
+  font-size: 1.6rem;
+}
+
+/* reset settings for all browser */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: relative;
+
+  /* border: 1px solid rebeccapurple; */
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 2rem 5%;
+  font-weight: 500;
+  font-size: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.logo {
+  /* border: 0.1rem solid gray; */
+  padding: 0.5rem;
+  border-radius: 600px;
+  cursor: pointer;
+}
+
+.nav-list {
+  display: none;
+  align-content: center;
+  list-style-type: none;
+  width: 50%;
+
+  /* gap: 20%; */
+  justify-content: flex-end;
+
+  /* border: 1px solid rebeccapurple; */
+}
+
+.nav-list li:not(:last-child) {
+  margin-right: 20%;
+}
+
+.menu-btn {
+  display: inline-block;
+  background-color: white;
+  width: 4rem;
+  height: auto;
+  border: none;
+  font-size: 2.5rem;
+}
+
+a,
+a:hover,
+a:visited {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    padding: 2rem 10%;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: none;
+  }
 }
