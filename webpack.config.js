@@ -10,9 +10,9 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-       test: /bootstrap\/dist\/js\/umd\//,
-       use: 'imports-loader?jQuery=jquery',
-     },
+        test: /bootstrap\/dist\/js\/umd\//,
+        use: 'imports-loader?jQuery=jquery',
+      },
     ],
   },
 
