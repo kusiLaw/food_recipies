@@ -16,6 +16,7 @@ module.exports = {
     ],
   },
 
+
   devServer: {
     static: {
       directory: path.resolve(__dirname, 'dist'),
@@ -24,7 +25,7 @@ module.exports = {
     hot: true,
     compress: true,
     historyApiFallback: true,
-
+    port: 3000
   },
 
   plugins: [
