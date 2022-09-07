@@ -1,5 +1,5 @@
 class Api {
- url = 'https://www.themealdb.com/api/json/v1/1/categories.php';
+ url = 'https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian'
 
  newScore = async (object) => {
    await fetch(this.url, {
