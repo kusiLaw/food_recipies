@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: Lato, Helvetica, sans-serif;
+  font-family: okra, Helvetica, sans-serif;
   min-width: 32rem;
   font-size: 1.6rem;
 }
@@ -19,8 +19,6 @@ body {
 
 nav {
   position: relative;
-
-  /* border: 1px solid rebeccapurple; */
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -31,26 +29,75 @@ nav {
 }
 
 .logo {
-  /* border: 0.1rem solid gray; */
   padding: 0.5rem;
   border-radius: 600px;
   cursor: pointer;
+}
+
+.nav-item{
+ width: 50%;
+ display: flex;
+}
+
+.nav-item.mobile{
+ display: flex;
+ flex-direction: column;
+ position: absolute;
+ background-color:rgba(56,58,89,0.9);
+ z-index: 20;
+ right: 0;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100vh;
 }
 
 .nav-list {
   display: none;
   align-content: center;
   list-style-type: none;
-  width: 50%;
-
-  /* gap: 20%; */
+  width: 100%;
   justify-content: flex-end;
+}
 
-  /* border: 1px solid rebeccapurple; */
+.nav-list span{
+  font-size: small;
+  background-color: pink;
+  border-radius: 300px;
+  padding: 3px;
+  color: white;
+  align-self:flex-end;
 }
 
 .nav-list li:not(:last-child) {
   margin-right: 20%;
+}
+
+.nav-list.mobile{
+ flex-direction: column;
+ margin-top: 2.5rem;
+ align-items: flex-start;
+ justify-content: center;
+}
+
+.nav-list.mobile li{
+ align-items: flex-start;
+ justify-content: center;
+ padding: 1rem;
+}
+.nav-list.mobile a,
+#toggle-close{
+ color:rgb(255,121,198)
+}
+
+
+#toggle-close{
+ display: none;
+ font-size: 3rem;
+ background-color: transparent;
+ border: none;
+ align-self: flex-end;
+ padding: 1.5rem 8%;
 }
 
 .menu-btn {
