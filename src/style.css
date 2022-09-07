@@ -117,104 +117,104 @@ a:visited {
   font-size: 2.5rem;
 }
 
-main{
- padding: 5rem;
+main {
+  padding: 5rem;
 }
 
-.food-title{
- padding: 2rem;
+.food-title {
+  padding: 2rem;
 }
 
-h2{
- font-style: italic;
- text-align: center;
+h2 {
+  font-style: italic;
+  text-align: center;
 }
 
-ul{
- display: flex;
+ul {
+  display: flex;
 
- /* justify-content: center; */
- list-style-type: none;
+  /* justify-content: center; */
+  list-style-type: none;
 }
 
-main ul{
- flex-grow: 1;
- flex-wrap: wrap;
- gap: 5%;
+main ul {
+  flex-grow: 1;
+  flex-wrap: wrap;
+  gap: 5%;
 }
 
-.food-list-items{
- padding: 2rem;
- width: 29rem;
- margin-bottom: 5rem;
- box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.food-list-items {
+  padding: 2rem;
+  width: 29rem;
+  margin-bottom: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
 
-.list-header{
- display: flex;
- justify-content: center;
- width: 100% ;
- height: auto;
- /* border-radius: 300px;
+.list-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+
+  /* border-radius: 300px;
  border: 1px solid gray; */
 }
 
-.food-img{
- width: 80%;
- height: auto;
+.food-img {
+  width: 80%;
+  height: auto;
 }
 
-
-.list-body{
- display: flex;
- flex-direction: column;
- gap: 1rem;
+.list-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.list-names-likes{
- display: flex;
- padding: 0.5rem 0rem;
- justify-content: space-between;
+.list-names-likes {
+  display: flex;
+  padding: 0.5rem 0;
+  justify-content: space-between;
 }
 
-/* .food-name{
-
-} */
-
-.like{
- display: flex;
- flex-direction: column;
- gap: 0.5rem;
-}
-.like span{
- margin-right: 0.5rem;
+.like {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-#like-img{
-
- background-color: transparent;
- border: none;
- width: 100%;
- height: auto;
+.like span {
+  margin-right: 0.5rem;
 }
 
-#like-img i{
- font-size: 2.5rem;
+#like-img {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: auto;
+}
+
+footer i {
+  color: #ffff;
+  margin-right: 0.5rem;
+}
+
+#like-img i {
+  font-size: 2.5rem;
   color: red;
 }
 
-.list-buttons{
- display: flex;
- flex-direction: column;
- align-items: center;
- gap:2rem;
+.list-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
-.list-buttons button{
- width: 80%;
- border-radius: 300px;
- padding: 0.2rem;
-
+.list-buttons button {
+  width: 80%;
+  border-radius: 300px;
+  padding: 0.2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -255,11 +255,6 @@ footer {
 
 .authors {
   width: 50%;
-}
-
-footer i {
-  color: #ffff;
-  margin-right: 0.5rem;
 }
 
 strong {
