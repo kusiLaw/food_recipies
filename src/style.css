@@ -132,22 +132,38 @@ h2{
 
 ul{
  display: flex;
- flex: 1 1 auto;
- flex-wrap: wrap;
+
+ /* justify-content: center; */
  list-style-type: none;
+}
+
+main ul{
+ flex-grow: 1;
+ flex-wrap: wrap;
+ gap: 5%;
 }
 
 .food-list-items{
  padding: 2rem;
- box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+ width: 29rem;
+ margin-bottom: 5rem;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .list-header{
+ display: flex;
+ justify-content: center;
  width: 100% ;
  height: auto;
- border-radius: 300px;
- border: 1px solid gray;
+ /* border-radius: 300px;
+ border: 1px solid gray; */
 }
+
+.food-img{
+ width: 80%;
+ height: auto;
+}
+
 
 .list-body{
  display: flex;
@@ -175,18 +191,30 @@ ul{
 }
 
 #like-img{
- width: 50%;
+
+ background-color: transparent;
+ border: none;
+ width: 100%;
  height: auto;
+}
+
+#like-img i{
+ font-size: 2.5rem;
+  color: red;
 }
 
 .list-buttons{
  display: flex;
  flex-direction: column;
+ align-items: center;
  gap:2rem;
 }
 
 .list-buttons button{
- width: 100%;
+ width: 80%;
+ border-radius: 300px;
+ padding: 0.2rem;
+
 }
 
 @media screen and (min-width: 768px) {
