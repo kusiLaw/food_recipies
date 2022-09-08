@@ -2,6 +2,8 @@ class Api {
  url = {
    recipe: 'https://www.themealdb.com/api/json/v1/1/filter.php?a=',
    popup: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=',
+   likes:
+   'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/pqjGrlyQr7CLbjRiDztL/likes/',
  }
 
  newScore = async (object) => {
