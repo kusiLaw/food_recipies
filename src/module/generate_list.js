@@ -7,12 +7,12 @@ const generateList = (array) => {
 
   for (let i = 0; i < array.length; i += 1) {
     ul.innerHTML += `<li class="food-list-items" id = 'li-${array[i].idMeal}'>
-    <div class="list-header"><img class="food-img" src="${array[i].strMealThumb}" alt="food"></div>
+    <div class="list-header"><img  class="food-img" src="${array[i].strMealThumb}" alt="food"></div>
     <div class="list-body">
      <div class="list-names-likes">
       <p class="food-name">${array[i].strMeal}</p>
       <div class="like">
-      <button type='button' id='like-img'><i class="fa-solid fa-heart"></i></button>
+      <button type='button' id='like-img'><i id='love-${array[i].idMeal}' class="fa-solid fa-heart"></i></button>
        <p><span id='like-${array[i].idMeal}'>0</span>likes</p>
       </div>
      </div>
