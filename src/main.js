@@ -11,7 +11,7 @@ const api = new Api();
 
 const loadList = async () => {
   try {
-    const data = await api.getRecipes();
+    const data = await api.getRecipes('recipe');
     recipes.innerHTML = '';
     recipes.appendChild(generateList(data));
   } catch {

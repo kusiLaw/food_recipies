@@ -1,5 +1,8 @@
 class Api {
- url = 'https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian'
+ url = {
+   recipe: 'https://www.themealdb.com/api/json/v1/1/filter.php?a=',
+   popup: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=',
+ }
 
  newScore = async (object) => {
    await fetch(this.url, {
@@ -13,9 +16,9 @@ class Api {
    });
  }
 
- getRecipes = async () => {
+ getRecipes = async (preferredLink, key = 'Canadian') => {
    try {
-     const response = await fetch(this.url);
+     const response = await fetch(this.url[preferredLink].concat(key));
      const results = await response.json();
      return results;
    } catch (e) {
