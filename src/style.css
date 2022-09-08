@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Ubuntu:wght@300&display=swap');
+
 html {
   font-size: 62.5%;
 }
 
 body {
-  font-family: okra, Helvetica, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   min-width: 32rem;
   font-size: 1.6rem;
 }
@@ -119,6 +121,7 @@ a:visited {
 
 main {
   padding: 5rem;
+  position: relative;
 }
 
 .food-title {
@@ -259,4 +262,83 @@ footer {
 
 strong {
   color: #fff;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: rgb(30, 32, 25);
+  z-index: 20;
+  right: 25%;
+  padding: 2%;
+  color: #fff;
+  top: 0;
+  width: 50%;
+  height: 90vh;
+  margin-top: 2%;
+}
+
+.pop-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 45%;
+}
+
+.pop-header img {
+  height: 100%;
+  width: auto;
+}
+
+.pop-header button {
+  align-self: flex-start;
+  justify-self: flex-end;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2rem;
+  font-size: 2rem;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+}
+
+.pop-body {
+  margin-top: 1rem;
+}
+
+.pop-name {
+  font-size: 2rem;
+}
+
+.pop-comment {
+  margin-top: 5rem;
+}
+
+.pop-button {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+input {
+  margin-top: 2rem;
+  height: 3rem;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+input::placeholder {
+  padding: 1rem;
+  font-style: italic;
+}
+
+main h2 {
+  font-weight: 1000;
+}
+
+.pop-button button {
+  width: 30%;
+  margin-top: 1rem;
 }
