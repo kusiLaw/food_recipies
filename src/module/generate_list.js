@@ -1,6 +1,6 @@
 const generateList = (array) => {
   array = array.meals; // array of objects
-  // console.log(array)
+
   const ul = document.createElement('ul');
   ul.setAttribute('class', 'food-list');
   ul.id = 'id-recipe';

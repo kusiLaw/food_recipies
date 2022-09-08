@@ -1,7 +1,7 @@
 import generateList from './module/generate_list.js';
 import Api from './module/api.js';
 import popup from './module/popuplist.js';
-import {setLikes, updateLike} from './module/likes.js';
+import { setLikes, updateLike } from './module/likes.js';
 
 const menu = document.getElementById('toggle-menu');
 const toggleClose = document.getElementById('toggle-close');
@@ -14,12 +14,6 @@ const mainContainer = document.getElementById('main-container');
 
 const api = new Api();
 
-const pageLikes = async (targetId) => {
-  const likes = await api.getRecipes('likes', '');
-  // updateLike(targetId, likes);
-  setLikes(likes);
-}
-
 const loadList = async () => {
   try {
     const data = await api.getRecipes('recipe');
@@ -27,7 +21,6 @@ const loadList = async () => {
     recipes.innerHTML = '';
     recipes.appendChild(generateList(data));
     setLikes(likes);
-     // await pageLikes(fn = setLikes)
   } catch {
     error.innerHTML = 'Server not responding';
   }
@@ -63,22 +56,16 @@ toggleClose.onclick = () => {
 };
 
 recipes.addEventListener('click', (e) => {
-
- if (/love-+\w/gi.test(e.target.id)) {
-   console.log("love clicked")
-   let id = e.target.id.split('-')[1]
-   api.addLike(id).then(
-     (val)=>{
-     console.log(val)
-    }
-   )
-   pageLikes(id)
+  if (/love-+\w/gi.test(e.target.id)) {
+    const id = e.target.id.split('-')[1];
+    updateLike(id);
+    api.addLike(id);
   }
 
- if (/com-+\w/gi.test(e.target.id)) {
-  loadpop(e.target.id.split('-')[1]);
-  e.preventDefault();
- }
+  if (/com-+\w/gi.test(e.target.id)) {
+    loadpop(e.target.id.split('-')[1]);
+    e.preventDefault();
+  }
 });
 
 document.getElementById('main-container').onclick = (e) => {
