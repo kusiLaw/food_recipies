@@ -1,6 +1,6 @@
 import generateList from './module/generate_list.js';
 import Api from './module/api.js';
-import popup from "./module/popuplist.js";
+import popup from './module/popuplist.js';
 
 const menu = document.getElementById('toggle-menu');
 const toggleClose = document.getElementById('toggle-close');
@@ -9,7 +9,7 @@ const listContainer = document.getElementById('list-dynamic');
 const recipes = document.getElementById('recipes');
 const error = document.getElementById('error');
 
-const mainContainer = document.getElementById("main-container");
+const mainContainer = document.getElementById('main-container');
 
 const api = new Api();
 
@@ -25,7 +25,7 @@ const loadList = async () => {
 
 const loadpop = async (targetId) => {
   try {
-    const data = await api.getRecipes("popup", targetId);
+    const data = await api.getRecipes('popup', targetId);
     mainContainer.prepend(popup(data));
     // recipes.appendChild(generateList(data));
   } catch (e) {
@@ -54,12 +54,12 @@ toggleClose.onclick = () => {
   menu.style.display = 'flex';
 };
 
-recipes.addEventListener("click", (e) => {
-  loadpop(e.target.id.split("-")[1]);
+recipes.addEventListener('click', (e) => {
+  loadpop(e.target.id.split('-')[1]);
   e.preventDefault();
 });
-document.getElementById("main-container").onclick = (e) => {
-  if (e.target.id === "pop-close" || e.target.id === "i-close") {
-    document.getElementById("id-popup").remove();
+document.getElementById('main-container').onclick = (e) => {
+  if (e.target.id === 'pop-close' || e.target.id === 'i-close') {
+    document.getElementById('id-popup').remove();
   }
 };
