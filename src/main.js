@@ -1,7 +1,7 @@
 import generateList from './module/generate_list.js';
 import Api from './module/api.js';
 import popup from './module/popuplist.js';
-import setLikes from './module/updatelike.js';
+import { setLikes, updateLike } from './module/likes.js';
 
 const menu = document.getElementById('toggle-menu');
 const toggleClose = document.getElementById('toggle-close');
@@ -20,7 +20,7 @@ const loadList = async () => {
     const likes = await api.getRecipes('likes', '');
     recipes.innerHTML = '';
     recipes.appendChild(generateList(data));
-    setLikes(generateList(data), likes);
+    setLikes(likes);
   } catch {
     error.innerHTML = 'Server not responding';
   }
@@ -56,8 +56,16 @@ toggleClose.onclick = () => {
 };
 
 recipes.addEventListener('click', (e) => {
-  loadpop(e.target.id.split('-')[1]);
-  e.preventDefault();
+  if (/love-+\w/gi.test(e.target.id)) {
+    const id = e.target.id.split('-')[1];
+    updateLike(id);
+    api.addLike(id);
+  }
+
+  if (/com-+\w/gi.test(e.target.id)) {
+    loadpop(e.target.id.split('-')[1]);
+    e.preventDefault();
+  }
 });
 
 document.getElementById('main-container').onclick = (e) => {

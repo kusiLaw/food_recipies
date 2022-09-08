@@ -18,6 +18,18 @@ class Api {
    });
  }
 
+ addLike = async (idMeal) => {
+   await fetch(this.url.likes, {
+     method: 'POST',
+     headers: {
+       'Content-Type': 'application/json',
+     },
+     body: JSON.stringify({
+       item_id: idMeal,
+     }),
+   });
+ }
+
  getRecipes = async (preferredLink, key = 'Canadian') => {
    try {
      const response = await fetch(this.url[preferredLink].concat(key));
