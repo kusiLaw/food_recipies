@@ -8,12 +8,12 @@
 ## Built With
 
 - HTML/CSS, JavaScript
-- Webpack, Jest
+- Webpack, Jest, API
 - Github, Gitflow, Kanban Board
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://kusilaw.github.io/food_recipies/dist/)
 
 
 ## Getting Started
@@ -30,15 +30,14 @@ Here is my repository link: https://github.com/kusiLaw/food_recipies/tree/master
 
 👤 **Marvellous Ibironke**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Tommy Marvel](https://github.com/Tommymarvel)
+- Twitter: [@Tomiwa Ibironke](https://twitter.com/tomiwa_ibironke)
+- LinkedIn: [Marvellous Ibironke](https://www.linkedin.com/in/marvellous-ibironke-54026b231/)
 
-👤 **Author2**
+👤 **Lawrence Kusi**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/kusiLaw)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/lawrence-kusi-55a662104/)
 
 ## 🤝 Contributing
 
@@ -52,6 +51,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- Microverse
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
