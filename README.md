@@ -20,11 +20,11 @@
 
 **This is an example of how you may give instructions on setting up your project locally.**
 To Access my project locally please follow the following instructions;
-1. Enter this url:  https://github.com/Tommymarvel/FIRST-CAPSTONE-PROJECT/tree/Homepage in your web browser.
+1. Enter this url:  https://github.com/kusiLaw/food_recipies in your web browser.
 2. Once opened navigate to the top left level of the project a green code download button will be visible on the righthand side.
 3. Select download Zip option from drop down menu.
 4. Once the download is complete you will be able to access my project locally.
-Here is my repository link: https://github.com/Tommymarvel/FIRST-CAPSTONE-PROJECT
+Here is my repository link: https://github.com/kusiLaw/food_recipies/tree/master
 
 ## Authors
 

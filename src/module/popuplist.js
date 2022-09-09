@@ -1,9 +1,9 @@
 const popup = (array) => {
   array = array.meals;
   // return
-  const div = document.createElement("div");
-  div.className = "popup";
-  div.id = "id-popup";
+  const div = document.createElement('div');
+  div.className = 'popup';
+  div.id = 'id-popup';
   div.innerHTML += `
  <div class="pop-header" id="pop">
   <img src="${array[0].strMealThumb}" alt="">
