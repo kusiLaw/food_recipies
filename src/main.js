@@ -2,6 +2,7 @@ import generateList from './module/generate_list.js';
 import Api from './module/api.js';
 import popup from './module/popuplist.js';
 import { setLikes, updateLike } from './module/likes.js';
+import displayComment from './module/comments.js';
 
 const menu = document.getElementById('toggle-menu');
 const toggleClose = document.getElementById('toggle-close');
@@ -63,13 +64,31 @@ recipes.addEventListener('click', (e) => {
   }
 
   if (/com-+\w/gi.test(e.target.id)) {
-    loadpop(e.target.id.split('-')[1]);
-    e.preventDefault();
+    const id = e.target.id.split('-')[1];
+    loadpop(id);
+    // e.preventDefault();
+    // mav
+    api.getRecipes('getcomments', id).then((result) => {
+      displayComment(id, result);
+    });
   }
 });
 
 document.getElementById('main-container').onclick = (e) => {
   if (e.target.id === 'pop-close' || e.target.id === 'i-close') {
     document.getElementById('id-popup').remove();
+  }
+
+  if (/btn-+\w/gi.test(e.target.id)) {
+    const id = e.target.id.split('-')[1];
+    const name = document.getElementById(`name-${id}`).value;
+    const message = document.getElementById(`comment-${id}`).value;
+    if (name !== '' && message !== '') {
+      api.addComment(id, name, message).then(() => {
+        api.getRecipes('getcomments', id).then((result) => {
+          displayComment(id, result);
+        });
+      });
+    }
   }
 };

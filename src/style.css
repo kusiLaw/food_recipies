@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Ubuntu:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Ubuntu:wght@300&display=swap");
 
 html {
   font-size: 62.5%;
@@ -31,6 +31,7 @@ nav {
 }
 
 .logo {
+  font-weight: 1000;
   padding: 0.5rem;
   border-radius: 600px;
   cursor: pointer;
@@ -135,8 +136,6 @@ h2 {
 
 ul {
   display: flex;
-
-  /* justify-content: center; */
   list-style-type: none;
 }
 
@@ -313,7 +312,22 @@ strong {
 }
 
 .pop-comment {
-  margin-top: 5rem;
+  margin-top: 1rem;
+  border: 2px grey solid;
+  overflow-y: scroll;
+  height: 90px;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.pop-comment p:nth-child(even) {
+  background-color: grey;
+}
+
+.pop-comment p:nth-child(odd) {
+  padding: 1px;
 }
 
 .pop-button {

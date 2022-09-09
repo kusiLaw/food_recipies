@@ -1,15 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Food Recipe
 
-> Description the project.
+> This a capstone project for a resturant recipe website for customers to see, like, and comment on thier favourite recipe
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML/CSS, JavaScript
+- Webpack, Jest
+- Github, Gitflow, Kanban Board
 
 ## Live Demo (if available)
 
@@ -19,28 +19,16 @@
 ## Getting Started
 
 **This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+To Access my project locally please follow the following instructions;
+1. Enter this url:  https://github.com/kusiLaw/food_recipies in your web browser.
+2. Once opened navigate to the top left level of the project a green code download button will be visible on the righthand side.
+3. Select download Zip option from drop down menu.
+4. Once the download is complete you will be able to access my project locally.
+Here is my repository link: https://github.com/kusiLaw/food_recipies/tree/master
 
 ## Authors
 
-👤 **Author1**
+👤 **Marvellous Ibironke**
 
 - GitHub: [@githubhandle](https://github.com/githubhandle)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
