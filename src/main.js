@@ -11,7 +11,7 @@ const ulLists = document.getElementById('lists');
 const listContainer = document.getElementById('list-dynamic');
 const recipes = document.getElementById('recipes');
 const error = document.getElementById('server-error');
-const  pageCount = document.getElementById("page-counter");
+const pageCount = document.getElementById('page-counter');
 
 const mainContainer = document.getElementById('main-container');
 
@@ -24,8 +24,8 @@ const loadList = async () => {
     recipes.innerHTML = '';
     recipes.appendChild(generateList(data));
     setLikes(likes);
-    itemCounter(pageCount, data)
-  } catch (e){
+    itemCounter(pageCount, data);
+  } catch (e) {
     error.innerHTML = 'Server not responding';
   }
 };
