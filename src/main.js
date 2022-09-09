@@ -3,6 +3,7 @@ import Api from './module/api.js';
 import popup from './module/popuplist.js';
 import { setLikes, updateLike } from './module/likes.js';
 import displayComment from './module/comments.js';
+import itemCounter from './module/counter.js';
 
 const menu = document.getElementById('toggle-menu');
 const toggleClose = document.getElementById('toggle-close');
@@ -10,6 +11,7 @@ const ulLists = document.getElementById('lists');
 const listContainer = document.getElementById('list-dynamic');
 const recipes = document.getElementById('recipes');
 const error = document.getElementById('server-error');
+const  pageCount = document.getElementById("page-counter");
 
 const mainContainer = document.getElementById('main-container');
 
@@ -22,7 +24,8 @@ const loadList = async () => {
     recipes.innerHTML = '';
     recipes.appendChild(generateList(data));
     setLikes(likes);
-  } catch {
+    itemCounter(pageCount, data)
+  } catch (e){
     error.innerHTML = 'Server not responding';
   }
 };
