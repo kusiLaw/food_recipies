@@ -72,11 +72,11 @@ a:visited {
 }
 
 .nav-list span {
-  font-size: small;
-  background-color: pink;
+  font-size: medium;
+  background-color: red;
   border-radius: 300px;
   padding: 3px;
-  color: white;
+  color: #000;
   align-self: flex-end;
 }
 
