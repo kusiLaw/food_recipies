@@ -19,38 +19,36 @@ const getRecipes = () => ({
   ],
 });
 
-const getComment = () => {
-  return  [
-     {
-         "username": "Marve",
-         "comment": "cool",
-         "creation_date": "2022-09-09"
-     },
-     {
-         "username": "Marve",
-         "comment": "cool",
-         "creation_date": "2022-09-09"
-     },
-     {
-         "comment": "cool",
-         "creation_date": "2022-09-09",
-         "username": "Marve"
-     },
-     {
-         "username": "Marve",
-         "creation_date": "2022-09-09",
-         "comment": "cool"
-     },
-     {
-         "creation_date": "2022-09-09",
-         "comment": "cool",
-         "username": "Marve"
-     },
-     {
-         "username": "Marve",
-         "comment": "cool",
-         "creation_date": "2022-09-09"
-     }
-    ]
- }
-export {getRecipes, getComment}
+const getComment = () => [
+  {
+    username: 'Marve',
+    comment: 'cool',
+    creation_date: '2022-09-09',
+  },
+  {
+    username: 'Marve',
+    comment: 'cool',
+    creation_date: '2022-09-09',
+  },
+  {
+    comment: 'cool',
+    creation_date: '2022-09-09',
+    username: 'Marve',
+  },
+  {
+    username: 'Marve',
+    creation_date: '2022-09-09',
+    comment: 'cool',
+  },
+  {
+    creation_date: '2022-09-09',
+    comment: 'cool',
+    username: 'Marve',
+  },
+  {
+    username: 'Marve',
+    comment: 'cool',
+    creation_date: '2022-09-09',
+  },
+];
+export { getRecipes, getComment };
