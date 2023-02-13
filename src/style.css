@@ -142,12 +142,12 @@ ul {
 main ul {
   flex-grow: 1;
   flex-wrap: wrap;
-  gap: 5%;
+  justify-content: space-between;
 }
 
 .food-list-items {
   padding: 2rem;
-  width: 29rem;
+  flex: 0 1 auto;
   margin-bottom: 5rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
@@ -231,6 +231,11 @@ footer i {
   .menu-btn {
     display: none;
   }
+  
+  .food-list-items {
+    flex: 0 1 30%;
+  }
+  
 }
 
 footer {
