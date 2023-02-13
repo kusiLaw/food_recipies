@@ -233,10 +233,17 @@ footer i {
   }
   
   .food-list-items {
-    flex: 0 1 30%;
+    flex: 0 1 45%;
   }
   
 }
+
+@media screen and (min-width: 1024px) {
+  .food-list-items {
+   flex: 0 1 30%;
+   }
+}
+
 
 footer {
   display: flex;
